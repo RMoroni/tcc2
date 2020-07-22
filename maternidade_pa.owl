@@ -1,41 +1,64 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/rodrigo/ontologies/2020/3/maternidade_pa"
+     xml:base="http://www.semanticweb.org/rodrigo/maternidade_pa"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/rodrigo/ontologies/2020/3/maternidade_pa">
-    <Prefix name="" IRI="http://www.semanticweb.org/rodrigo/ontologies/2020/3/maternidade_pa"/>
-    <Prefix name="acr" IRI="http://www.semanticweb.org/rodrigo/ontologies/2020/3/maternidade_pa"/>
+     ontologyIRI="http://www.semanticweb.org/rodrigo/maternidade_pa">
+    <Prefix name="" IRI="http://www.semanticweb.org/rodrigo/maternidade_pa"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="pat_hc" IRI="http://www.semanticweb.org/rodrigo/maternidade_pa"/>
+    <Prefix name="pat_hc_old" IRI="http://www.semanticweb.org/rodrigo/ontologies/2020/3/maternidade_pa"/>
     <Import>http://purl.obolibrary.org/obo/doid/releases/2020-04-20/doid.owl</Import>
+    <Import>http://www.semanticweb.org/rodrigo/d_a_curitiba</Import>
     <Import>http://xmlns.com/foaf/0.1/</Import>
     <Declaration>
-        <Class IRI="#classificacao_risco"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OGMS_0000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#conduta"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="http://schema.org/CreativeWork"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#medico"/>
+        <Class IRI="http://schema.org/ImageObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#paciente"/>
+        <Class IRI="http://schema.org/Person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#ClassificacaoRisco"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#tipo_atendimento"/>
+        <Class IRI="#Conduta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enfermeiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paciente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegistroHospitalar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TipoAtendimento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#temClassificacaoRisco"/>
@@ -65,16 +88,22 @@
         <ObjectProperty IRI="#temTipoAtendimento"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/rodrigo/ontologies/2020/5/dados_abertos_curitiba#temSintoma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ClassificacaoRisco"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Conduta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TipoAtendimento"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#cartao_nacional_saude"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#cid"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#classificacao_risco"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#conduta"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#coren"/>
@@ -152,10 +181,10 @@
         <DataProperty IRI="#temperatura"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#tipo_atendimento"/>
+        <NamedIndividual IRI="#carbonato_litio"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#carbonato_litio"/>
+        <NamedIndividual IRI="#cloridrato_paroxetina"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#conduta_cid_z014"/>
@@ -185,10 +214,13 @@
         <NamedIndividual IRI="#cr_vermelho"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#disease_cid_020.0"/>
+        <NamedIndividual IRI="#disease_cid_b37.3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#disease_cid_b37.3"/>
+        <NamedIndividual IRI="#disease_cid_d25.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#disease_cid_o20.0"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#enfermeiro_37994"/>
@@ -198,6 +230,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#enfermeiro_43854"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#enfermeiro_4471"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#enfermeiro_51154"/>
@@ -263,6 +298,9 @@
         <NamedIndividual IRI="#paciente_5235827"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#paciente_6823578"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#paciente_8186760"/>
     </Declaration>
     <Declaration>
@@ -275,7 +313,22 @@
         <NamedIndividual IRI="#registro_1133"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#registro_1489"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#registro_1502"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#registro_1511"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#registro_1520"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#registro_17487"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#registro_3070"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#registro_564016"/>
@@ -290,7 +343,13 @@
         <NamedIndividual IRI="#registro_985"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#symptom_cid_d62"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#symptom_cid_n76.8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#symptom_cid_n926"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#symptom_cid_n939"/>
@@ -313,61 +372,58 @@
     <Declaration>
         <NamedIndividual IRI="#vs_1_paciente_2270257"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OGMS_0000029"/>
-    </Declaration>
     <EquivalentClasses>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#temPaciente"/>
-            <Class IRI="#paciente"/>
+            <Class IRI="#Paciente"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#temTipoAtendimento"/>
-            <Class IRI="#tipo_atendimento"/>
+            <Class IRI="#TipoAtendimento"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
             <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
         </ObjectMinCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="#temEnfermeiro"/>
-            <Class IRI="#enfermeiro"/>
+            <Class IRI="#Enfermeiro"/>
         </ObjectMinCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="#temMedico"/>
-            <Class IRI="#medico"/>
+            <Class IRI="#Medico"/>
         </ObjectMinCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <ObjectMaxCardinality cardinality="2">
             <ObjectProperty IRI="#temClassificacaoRisco"/>
-            <Class IRI="#classificacao_risco"/>
+            <Class IRI="#ClassificacaoRisco"/>
         </ObjectMaxCardinality>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
         <Class abbreviatedIRI="foaf:Person"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <Class abbreviatedIRI="foaf:Person"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <Class abbreviatedIRI="foaf:Person"/>
     </SubClassOf>
     <ClassAssertion>
@@ -375,184 +431,228 @@
         <NamedIndividual IRI="#carbonato_litio"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#conduta"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <NamedIndividual IRI="#cloridrato_paroxetina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Conduta"/>
         <NamedIndividual IRI="#conduta_cid_z014"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#conduta"/>
+        <Class IRI="#Conduta"/>
         <NamedIndividual IRI="#conduta_encaminhamento"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#conduta"/>
+        <Class IRI="#Conduta"/>
         <NamedIndividual IRI="#conduta_encaminhamento_contrareferencia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#conduta"/>
+        <Class IRI="#Conduta"/>
         <NamedIndividual IRI="#conduta_tratamento_progestagenos"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#classificacao_risco"/>
+        <Class IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_amarelo"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#classificacao_risco"/>
+        <Class IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_azul"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#classificacao_risco"/>
+        <Class IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_laranja"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#classificacao_risco"/>
+        <Class IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_verde"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#classificacao_risco"/>
+        <Class IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_vermelho"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.obolibrary.org/obo/DOID_229"/>
-        <NamedIndividual IRI="#disease_cid_020.0"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.obolibrary.org/obo/DOID_2272"/>
         <NamedIndividual IRI="#disease_cid_b37.3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_2691"/>
+        <NamedIndividual IRI="#disease_cid_d25.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_229"/>
+        <NamedIndividual IRI="#disease_cid_o20.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_37994"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_41609"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_43854"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
+        <NamedIndividual IRI="#enfermeiro_4471"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_51154"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_55589"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_61007"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_78583"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
         <NamedIndividual IRI="#enfermeiro_93381"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#tipo_atendimento"/>
+        <Class IRI="#TipoAtendimento"/>
         <NamedIndividual IRI="#ginecologia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_12539"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_28857"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_3209"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_3210"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_3509"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_42179"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_42826"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
         <NamedIndividual IRI="#medico_91621"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#tipo_atendimento"/>
+        <Class IRI="#TipoAtendimento"/>
         <NamedIndividual IRI="#obstetricia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_1125776"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_1126909"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_1592807"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_2270257"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_2447303"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_5235827"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#paciente_6823578"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_8186760"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
         <NamedIndividual IRI="#paciente_8333072"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <NamedIndividual IRI="#registro_1040"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <NamedIndividual IRI="#registro_1133"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
+        <NamedIndividual IRI="#registro_1489"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegistroHospitalar"/>
+        <NamedIndividual IRI="#registro_1502"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegistroHospitalar"/>
+        <NamedIndividual IRI="#registro_1511"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegistroHospitalar"/>
+        <NamedIndividual IRI="#registro_1520"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegistroHospitalar"/>
         <NamedIndividual IRI="#registro_17487"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
+        <NamedIndividual IRI="#registro_3070"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegistroHospitalar"/>
         <NamedIndividual IRI="#registro_564016"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <NamedIndividual IRI="#registro_769141"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <NamedIndividual IRI="#registro_908707"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
         <NamedIndividual IRI="#registro_985"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000721"/>
+        <NamedIndividual IRI="#symptom_cid_d62"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000196"/>
         <NamedIndividual IRI="#symptom_cid_n76.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000196"/>
+        <NamedIndividual IRI="#symptom_cid_n926"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000436"/>
@@ -586,6 +686,11 @@
         <ObjectProperty IRI="#temMedicamento"/>
         <NamedIndividual IRI="#paciente_2270257"/>
         <NamedIndividual IRI="#carbonato_litio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temMedicamento"/>
+        <NamedIndividual IRI="#paciente_2270257"/>
+        <NamedIndividual IRI="#cloridrato_paroxetina"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#temMedicamento"/>
@@ -669,6 +774,96 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1489"/>
+        <NamedIndividual IRI="#symptom_cid_d62"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1489"/>
+        <NamedIndividual IRI="#symptom_cid_n926"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1489"/>
+        <NamedIndividual IRI="#symptom_cid_n939"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDiagnostico"/>
+        <NamedIndividual IRI="#registro_1489"/>
+        <NamedIndividual IRI="#disease_cid_d25.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#symptom_cid_n926"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#symptom_cid_n939"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/rodrigo/d_a_curitiba#temTipoAtendimento"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#obstetricia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temClassificacaoRisco"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#cr_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temConduta"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#conduta_encaminhamento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDiagnostico"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#disease_cid_d25.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temEnfermeiro"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#enfermeiro_4471"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temMedico"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#medico_3210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temPaciente"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <NamedIndividual IRI="#paciente_1126909"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1511"/>
+        <NamedIndividual IRI="#symptom_cid_n926"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDiagnostico"/>
+        <NamedIndividual IRI="#registro_1511"/>
+        <NamedIndividual IRI="#disease_cid_d25.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1520"/>
+        <NamedIndividual IRI="#symptom_cid_n926"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_1520"/>
+        <NamedIndividual IRI="#symptom_cid_n939"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDiagnostico"/>
+        <NamedIndividual IRI="#registro_1520"/>
+        <NamedIndividual IRI="#disease_cid_d25.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
         <NamedIndividual IRI="#registro_17487"/>
         <NamedIndividual IRI="#symptom_cid_n939"/>
     </ObjectPropertyAssertion>
@@ -700,6 +895,41 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#temTipoAtendimento"/>
         <NamedIndividual IRI="#registro_17487"/>
+        <NamedIndividual IRI="#obstetricia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <NamedIndividual IRI="#symptom_cid_n939"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <NamedIndividual IRI="#symptom_cid_o62.4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temClassificacaoRisco"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <NamedIndividual IRI="#cr_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temEnfermeiro"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <NamedIndividual IRI="#enfermeiro_4471"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temMedico"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <NamedIndividual IRI="#medico_3210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temPaciente"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <NamedIndividual IRI="#paciente_6823578"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temTipoAtendimento"/>
+        <NamedIndividual IRI="#registro_3070"/>
         <NamedIndividual IRI="#obstetricia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -748,6 +978,11 @@
         <NamedIndividual IRI="#conduta_encaminhamento"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDiagnostico"/>
+        <NamedIndividual IRI="#registro_769141"/>
+        <NamedIndividual IRI="#disease_cid_o20.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#temEnfermeiro"/>
         <NamedIndividual IRI="#registro_769141"/>
         <NamedIndividual IRI="#enfermeiro_61007"/>
@@ -785,7 +1020,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#temDiagnostico"/>
         <NamedIndividual IRI="#registro_908707"/>
-        <NamedIndividual IRI="#disease_cid_020.0"/>
+        <NamedIndividual IRI="#disease_cid_o20.0"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#temEnfermeiro"/>
@@ -848,59 +1083,59 @@
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Carbonato de Lítio</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:name"/>
+        <NamedIndividual IRI="#cloridrato_paroxetina"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Cloridrato de Paroxetina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Conduta"/>
+        <NamedIndividual IRI="#conduta_cid_z014"/>
+        <Literal>Exame Ginecológico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#cid"/>
         <NamedIndividual IRI="#conduta_cid_z014"/>
         <Literal>Z014</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#conduta"/>
-        <NamedIndividual IRI="#conduta_cid_z014"/>
-        <Literal>Exame Ginecológico</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#conduta"/>
+        <DataProperty IRI="#Conduta"/>
         <NamedIndividual IRI="#conduta_encaminhamento"/>
         <Literal>Encaminhamento para outra unidade de saúde</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#conduta"/>
+        <DataProperty IRI="#Conduta"/>
         <NamedIndividual IRI="#conduta_encaminhamento_contrareferencia"/>
         <Literal>Encaminhamento para outra unidade de saúde por contra referência (tipo de atendimento não adequado para a unidade)</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#conduta"/>
+        <DataProperty IRI="#Conduta"/>
         <NamedIndividual IRI="#conduta_tratamento_progestagenos"/>
         <Literal>Tratamento hormonal com progesterona</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#classificacao_risco"/>
+        <DataProperty IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_amarelo"/>
         <Literal>Amarelo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#classificacao_risco"/>
+        <DataProperty IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_azul"/>
         <Literal>Azul</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#classificacao_risco"/>
+        <DataProperty IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_laranja"/>
         <Literal>Laranja</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#classificacao_risco"/>
+        <DataProperty IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_verde"/>
         <Literal>Verde</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#classificacao_risco"/>
+        <DataProperty IRI="#ClassificacaoRisco"/>
         <NamedIndividual IRI="#cr_vermelho"/>
         <Literal>Vermelho</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#cid"/>
-        <NamedIndividual IRI="#disease_cid_020.0"/>
-        <Literal>O20.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cid"/>
@@ -913,12 +1148,22 @@
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Candidíase da vulva e da vagina</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#tipo_atendimento"/>
+        <DataProperty IRI="#cid"/>
+        <NamedIndividual IRI="#disease_cid_d25.1"/>
+        <Literal>D25.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cid"/>
+        <NamedIndividual IRI="#disease_cid_o20.0"/>
+        <Literal>o20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TipoAtendimento"/>
         <NamedIndividual IRI="#ginecologia"/>
         <Literal>Ginecologia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#tipo_atendimento"/>
+        <DataProperty IRI="#TipoAtendimento"/>
         <NamedIndividual IRI="#obstetricia"/>
         <Literal>Obstetrícia</Literal>
     </DataPropertyAssertion>
@@ -1053,6 +1298,21 @@
         <Literal>Feminino</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#idade_gestacional"/>
+        <NamedIndividual IRI="#paciente_6823578"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <NamedIndividual IRI="#paciente_6823578"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <NamedIndividual IRI="#paciente_6823578"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Feminino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#data_nascimento"/>
         <NamedIndividual IRI="#paciente_8186760"/>
         <Literal>10/11/2001</Literal>
@@ -1098,6 +1358,16 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2019-11-01T08:29:14-03:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#data_hora_acolhimento"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2019-11-05T07:56:18-03:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#data_hora_atendimento"/>
+        <NamedIndividual IRI="#registro_1502"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2019-11-05T08:20:18-03:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#intensidade_dor"/>
         <NamedIndividual IRI="#registro_17487"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">7</Literal>
@@ -1105,6 +1375,26 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#temperatura"/>
         <NamedIndividual IRI="#registro_17487"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#data_hora_acolhimento"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2019-11-01T10:12:49-03:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#data_hora_atendimento"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2019-11-01T10:26:22-03:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#intensidade_dor"/>
+        <NamedIndividual IRI="#registro_3070"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temperatura"/>
+        <NamedIndividual IRI="#registro_3070"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">40</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -1149,6 +1439,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cid"/>
+        <NamedIndividual IRI="#symptom_cid_d62"/>
+        <Literal>D62</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cid"/>
         <NamedIndividual IRI="#symptom_cid_n76.8"/>
         <Literal>N76.8</Literal>
     </DataPropertyAssertion>
@@ -1156,6 +1451,11 @@
         <DataProperty IRI="#descricao_sintoma"/>
         <NamedIndividual IRI="#symptom_cid_n76.8"/>
         <Literal>Outras inflamações especificadas da vagina e da vulva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cid"/>
+        <NamedIndividual IRI="#symptom_cid_n926"/>
+        <Literal>N92.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cid"/>
@@ -1252,43 +1552,43 @@
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temClassificacaoRisco"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temComorbidade"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temConduta"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temDiagnostico"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temEnfermeiro"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temMedicamento"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temMedico"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temPaciente"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#temTipoAtendimento"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/doid#has_symptom"/>
@@ -1296,7 +1596,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temClassificacaoRisco"/>
-        <Class IRI="#classificacao_risco"/>
+        <Class IRI="#ClassificacaoRisco"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temComorbidade"/>
@@ -1304,7 +1604,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temConduta"/>
-        <Class IRI="#conduta"/>
+        <Class IRI="#Conduta"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temDiagnostico"/>
@@ -1312,7 +1612,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temEnfermeiro"/>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temMedicamento"/>
@@ -1320,19 +1620,31 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temMedico"/>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temPaciente"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temTipoAtendimento"/>
-        <Class IRI="#tipo_atendimento"/>
+        <Class IRI="#TipoAtendimento"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
+        <DataProperty IRI="#ClassificacaoRisco"/>
+        <Class IRI="#ClassificacaoRisco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Conduta"/>
+        <Class IRI="#Conduta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TipoAtendimento"/>
+        <Class IRI="#TipoAtendimento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#cartao_nacional_saude"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#cid"/>
@@ -1344,43 +1656,35 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#cid"/>
-        <Class IRI="#conduta"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#classificacao_risco"/>
-        <Class IRI="#classificacao_risco"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#conduta"/>
-        <Class IRI="#conduta"/>
+        <Class IRI="#Conduta"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#coren"/>
-        <Class IRI="#enfermeiro"/>
+        <Class IRI="#Enfermeiro"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#crm"/>
-        <Class IRI="#medico"/>
+        <Class IRI="#Medico"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#data_hora_acolhimento"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#data_hora_atendimento"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#data_hora_recepcao"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#data_hora_recolhimento"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#data_nascimento"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#descricao_sintoma"/>
@@ -1388,72 +1692,80 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#dpp"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#dum"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#frequencia_respiratoria"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#idade_gestacional"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#intensidade_dor"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#movimento_fetal"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#perda_liquidos"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#pressao_arterial"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#pulso"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#quantidade_aborto"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#quantidade_cesariana"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#quantidade_gestacoes"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#quantidade_parto_normal"/>
-        <Class IRI="#paciente"/>
+        <Class IRI="#Paciente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#queixa"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#saturacao"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#temperatura"/>
-        <Class IRI="#registro_hospitalar"/>
+        <Class IRI="#RegistroHospitalar"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#tipo_atendimento"/>
-        <Class IRI="#tipo_atendimento"/>
-    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ClassificacaoRisco"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Conduta"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TipoAtendimento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#cartao_nacional_saude"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -1463,14 +1775,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#classificacao_risco"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#conduta"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#coren"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1566,10 +1870,26 @@
         <DataProperty IRI="#temperatura"/>
         <Datatype abbreviatedIRI="xsd:short"/>
     </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#tipo_atendimento"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ClassificacaoRisco</IRI>
+        <Literal>Classificação de Risco definida pelo protocolo. Os possíveis valores são: Vermelho, Laranja, Amarelo, Verde e Azul.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Conduta</IRI>
+        <Literal>Conduta definida para a paciente pela equipe médica. É uma descrição textual do que deve ser feito. Caso seja um procedimento, descrever o CID do procedimento.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegistroHospitalar</IRI>
+        <Literal>Por padrão utilizar o número de registro médico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TipoAtendimento</IRI>
+        <Literal>Tipo de antedimento que ocorreu, exemplos: ginecologia e obstetricia.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cartao_nacional_saude</IRI>
@@ -1579,16 +1899,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cid</IRI>
         <Literal>Classificação Internacional de Doenças e Problemas Relacionas à Saúde.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#classificacao_risco</IRI>
-        <Literal>Classificação de Risco definida pelo protocolo. Os possíveis valores são: Vermelho, Laranja, Amarelo, Verde e Azul.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#conduta</IRI>
-        <Literal>Conduta definida para a paciente pela equipe médica. É uma descrição textual do que deve ser feito. Caso seja um procedimento, descrever o CID do procedimento.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1662,18 +1972,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#registro_hospitalar</IRI>
-        <Literal>Por padrão utilizar o número de registro médico.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#temperatura</IRI>
         <Literal>Temperatura em Celsius</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#tipo_atendimento</IRI>
-        <Literal>Tipo de antedimento que ocorreu, exemplos: ginecologia e obstetricia.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
